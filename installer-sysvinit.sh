@@ -35,7 +35,7 @@ FILE_NM_CONNECTION="/etc/NetworkManager/system-connections/default"
 
 URL_RAW_BASE="https://raw.githubusercontent.com/home-assistant/supervised-installer/master/files"
 URL_VERSION="https://version.home-assistant.io/stable.json"
-URL_BIN_APPARMOR="${URL_RAW_BASE}/hassio-apparmor"
+URL_BIN_APPARMOR="https://raw.githubusercontent.com/ITMicaH/HASSIO/main/hassio-apparmor"
 URL_BIN_HASSIO="https://raw.githubusercontent.com/ITMicaH/HASSIO/main/hassio-supervisor"
 URL_DOCKER_DAEMON="${URL_RAW_BASE}/docker_daemon.json"
 URL_HA="${URL_RAW_BASE}/ha"
