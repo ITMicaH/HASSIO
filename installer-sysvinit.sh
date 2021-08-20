@@ -26,7 +26,7 @@ BINARY_DOCKER=/usr/bin/docker
 DOCKER_REPO=homeassistant
 
 SERVICE_DOCKER="docker.service"
-SERVICE_NM="NetworkManager.service"
+SERVICE_NM="network-manager.service"
 
 FILE_DOCKER_CONF="/etc/docker/daemon.json"
 FILE_INTERFACES="/etc/network/interfaces"
