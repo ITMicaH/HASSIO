@@ -231,6 +231,7 @@ sed -i -e "s,%%BINARY_DOCKER%%,${BINARY_DOCKER},g" \
        "${SYSCONFDIR}/systemd/system/hassio-supervisor.service"
 
 chmod a+x "${PREFIX}/sbin/hassio-supervisor"
+info "Enabling supervisor service"
 update-rc.d hassio-supervisor.service enable > /dev/null 2>&1;
 
 #
