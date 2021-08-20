@@ -231,7 +231,7 @@ sed -i -e "s,%%BINARY_DOCKER%%,${BINARY_DOCKER},g" \
        "${SYSCONFDIR}/systemd/system/hassio-supervisor.service"
 
 chmod a+x "${PREFIX}/sbin/hassio-supervisor"
-chkconfig hassio-supervisor.service on > /dev/null 2>&1;
+update-rc.d hassio-supervisor.service enable > /dev/null 2>&1;
 
 #
 # Install Hass.io AppArmor
@@ -247,7 +247,7 @@ sed -i -e "s,%%SERVICE_DOCKER%%,${SERVICE_DOCKER},g" \
     "${SYSCONFDIR}/systemd/system/hassio-apparmor.service"
 
 chmod a+x "${PREFIX}/sbin/hassio-apparmor"
-chkconfig hassio-apparmor.service on > /dev/null 2>&1;
+update-rc.d hassio-apparmor.service enable > /dev/null 2>&1;
 service hassio-apparmor.service start
 
 
